@@ -21,7 +21,7 @@ export const agent = new Agentica({
       protocol: "class",
       application: typia.llm.application<GoogleImageService, "chatgpt">(),
       execute: new GoogleImageService({
-        apiKey: process.env.SERP_API_KEY!,
+        serpApiKey: process.env.SERP_API_KEY!,
       }),
     },
   ],
